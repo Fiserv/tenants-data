@@ -1,0 +1,64 @@
+{
+  "title": "cool-tenant",
+  "name": "cool-tenant",
+  "brand": "Fiserv",
+  "brandLogoURL": "Duffy",
+  "solution": [
+    "support"
+  ],
+  "brandDescription": "Fiserv, Inc. is a global provider of payments and financial services technology solutions. The Company provides account processing and digital banking solutions, card issuer processing and network services, payments, e-commerce, merchant acquiring and processing, and the Clover cloud-based point-of-sale solution. The Company operates through three segments: Merchant Acceptance (Acceptance), Financial Technology (Fintech) and Payments and Network (Payments).",
+  "categories": [
+    {
+      "name": "businessTypes",
+      "value": "Business Types",
+      "subcategories": [
+        {
+          "name": "valueAddedServices",
+          "value": "Value Added Services"
+        }
+      ]
+    }
+  ],
+  "product": {
+    "featured": true,
+    "logoURL": "",
+    "description": "Developer Studio Support pages",
+    "longDescription": "Developer Studio Support pages",
+    "layout": "/v1/layouts/cool-tenant",
+    "documentation": "/v1/docs/cool-tenant",
+    "documenttree": "/v1/docs/cool-tenant",
+    "documenttreeV2": "/v2/docs/cool-tenant",
+    "sandbox": "/v2/sandboxrun/cool-tenant",
+    "accessConfig": "/v1/fileAccess/cool-tenant",
+    "assets": "/v1/assets/cool-tenant",
+    "feature": [
+      {
+        "name": "plugins",
+        "value": false
+      },
+      {
+        "name": "industryOptionsAPIExplorer",
+        "value": false
+      }
+    ]
+  },
+  "supportConfig": [
+    {
+      "bug": {
+        "label": "bug,SupportPages",
+        "template": "bug.md",
+        "assignees": "asingh2023"
+      },
+      "feedback": {
+        "label": "feedback,SupportPages",
+        "template": "feedback.md",
+        "assignees": "asingh2023"
+      },
+      "enhancement": {
+        "label": "enhancement,SupportPages",
+        "template": "feature.md",
+        "assignees": "asingh2023"
+      }
+    }
+  ]
+}
