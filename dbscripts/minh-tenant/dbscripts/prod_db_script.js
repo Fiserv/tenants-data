@@ -1,16 +1,16 @@
 db.tenants.insertOne({
   title: 'Minh Tenant',
-  name: 'Minh Tenant',
+  name: 'MinhTenant',
   tenantHost: 'https://tenant-generic.prod-developer-portal.svc',
   tenantPort: '8443',
-  providerAPIUrl: '/v1/products/Minh Tenant',
+  providerAPIUrl: '/v1/products/MinhTenant',
   apiAuth: {},
   hasApis: true,
   productTags: [
     {
       category: 'Region', 
       value: 'Region',
-      tags: ['North America','EMEA','LATAM','APAC'],
+      tags: [''],
     },   
     {
       category: 'Integration Type', 
