@@ -11,17 +11,12 @@ db.tenants.insertOne({
       category: 'Region', 
       value: 'Region',
       tags: ['North America'],
-    },   
+    }, 
     {
-      category: 'Integration Type', 
-      value: 'Integration Type',
-      tags: [''],
-    },  
-    {
-      category: 'Industry', 
-      value: 'Industry',
-      tags: ['Banking , Retail'],
-    },    
+      category: 'Customer Segment', 
+      value: 'Customer_Segment',
+      tags: ['AI resources'],
+    },
   ],   
   active: true,
   betaTag: true,
@@ -53,17 +48,10 @@ db.tenants.insertOne({
     {
       name: 'active',
       value: 'develop',
-      available: true,
+      available: false,
       hasApis: false,
       sandboxType: 'live',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',
-      liveSandbox: {
-        serverUrl: 'https://api.test.com/tenantName',
-        authenticationScheme: 'HMAC',
-        username: '',
-        password: '',
-        selfSignedCert: false
-      }
     },
     {
       name: 'previous',
@@ -72,13 +60,6 @@ db.tenants.insertOne({
       hasApis: false,
       sandboxType: 'live',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',
-      liveSandbox: {
-        serverUrl: 'https://api.test.com/tenantName',
-        authenticationScheme: 'HMAC',
-        username: '',
-        password: '',
-        selfSignedCert: false
-      }
     },
     {
       name: 'preview',
@@ -87,13 +68,6 @@ db.tenants.insertOne({
       hasApis: false,
       sandboxType: 'live',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',
-      liveSandbox: {
-        serverUrl: 'https://api.test.com/tenantName',
-        authenticationScheme: 'HMAC',
-        username: '',
-        password: '',
-        selfSignedCert: false
-      }
     }
   ]
 });
