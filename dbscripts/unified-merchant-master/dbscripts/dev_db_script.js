@@ -1,9 +1,9 @@
 db.tenants.insertOne({
   title: 'UNIFIED MERCHANT MASTER',
-  name: 'UNIFIED MERCHANT MASTER',
+  name: 'UNIFIEDMERCHANTMASTER',
   tenantHost: 'https://tenant-generic.dev-developer-portal.svc',
   tenantPort: '8443',
-  providerAPIUrl: '/v1/products/UNIFIED MERCHANT MASTER',
+  providerAPIUrl: '/v1/products/UNIFIEDMERCHANTMASTER',
   apiAuth: {},
   hasApis: true,
   productTags: [
@@ -55,45 +55,24 @@ db.tenants.insertOne({
       value: 'develop',
       available: true,
       hasApis: true,
-      sandboxType: 'live',
+      sandboxType: 'mock',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',
-      liveSandbox: {
-        serverUrl: 'https://api.test.com/tenantName',
-        authenticationScheme: 'HMAC',
-        username: '',
-        password: '',
-        selfSignedCert: false
-      }
     },
     {
       name: 'previous',
       value: 'previous',
       available: false,
       hasApis: false,
-      sandboxType: 'live',
+      sandboxType: 'mock',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',
-      liveSandbox: {
-        serverUrl: 'https://api.test.com/tenantName',
-        authenticationScheme: 'HMAC',
-        username: '',
-        password: '',
-        selfSignedCert: false
-      }
     },
     {
       name: 'preview',
       value: 'preview',
       available: false,
       hasApis: false,
-      sandboxType: 'live',
+      sandboxType: 'mock',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',
-      liveSandbox: {
-        serverUrl: 'https://api.test.com/tenantName',
-        authenticationScheme: 'HMAC',
-        username: '',
-        password: '',
-        selfSignedCert: false
-      }
     }
   ]
 });
