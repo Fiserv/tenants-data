@@ -47,8 +47,8 @@ db.tenants.insertOne({
   gitHubFeatureBranches: [
     {
       name: 'active',
-      value: 'develop',
-      available: false,
+      value: 'main',
+      available: true,
       hasApis: false,
       sandboxType: 'mock',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',

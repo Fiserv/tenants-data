@@ -48,7 +48,7 @@ db.tenants.insertOne({
     {
       name: 'active',
       value: 'develop',
-      available: false,
+      available: true,
       hasApis: false,
       sandboxType: 'mock',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',
