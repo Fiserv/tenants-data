@@ -1,7 +1,7 @@
 db.tenants.insertOne({
   title: 'UNIFIED MERCHANT MASTER',
   name: 'UNIFIED MERCHANT MASTER',
-  tenantHost: 'https://tenant-generic.prod-developer-portal.svc',
+  tenantHost: 'https://tenant-generic.production-developer-portal.svc',
   tenantPort: '8443',
   providerAPIUrl: '/v1/products/UNIFIED MERCHANT MASTER',
   apiAuth: {},
