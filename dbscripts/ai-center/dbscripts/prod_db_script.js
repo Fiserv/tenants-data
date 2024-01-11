@@ -1,7 +1,7 @@
 db.tenants.insertOne({
   title: 'AI Center',
   name: 'AICenter',
-  tenantHost: 'https://tenant-generic.prod-developer-portal.svc',
+  tenantHost: 'https://tenant-generic.production-developer-portal.svc',
   tenantPort: '8443',
   providerAPIUrl: '/v1/products/AICenter',
   apiAuth: {},
@@ -11,17 +11,12 @@ db.tenants.insertOne({
       category: 'Region', 
       value: 'Region',
       tags: ['North America'],
-    },   
+    }, 
     {
-      category: 'Integration Type', 
-      value: 'Integration Type',
-      tags: [''],
+      category: 'Customer Segment', 
+      value: 'Customer_Segment',
+      tags: ['AI resources'],
     },  
-    {
-      category: 'Industry', 
-      value: 'Industry',
-      tags: ['Banking , Retail'],
-    },    
   ],   
   active: true,
   betaTag: true,
@@ -52,48 +47,27 @@ db.tenants.insertOne({
   gitHubFeatureBranches: [
     {
       name: 'active',
-      value: 'develop',
+      value: 'main',
       available: true,
       hasApis: false,
-      sandboxType: 'live',
+      sandboxType: 'mock',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',
-      liveSandbox: {
-        serverUrl: 'https://api.test.com/tenantName',
-        authenticationScheme: 'HMAC',
-        username: '',
-        password: '',
-        selfSignedCert: false
-      }
     },
     {
       name: 'previous',
       value: 'previous',
       available: false,
       hasApis: false,
-      sandboxType: 'live',
+      sandboxType: 'mock',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',
-      liveSandbox: {
-        serverUrl: 'https://api.test.com/tenantName',
-        authenticationScheme: 'HMAC',
-        username: '',
-        password: '',
-        selfSignedCert: false
-      }
     },
     {
       name: 'preview',
       value: 'preview',
       available: false,
       hasApis: false,
-      sandboxType: 'live',
+      sandboxType: 'mock',
       mockServerUrl: 'http://tenant-generic-mock-service:8443/sandboxrun',
-      liveSandbox: {
-        serverUrl: 'https://api.test.com/tenantName',
-        authenticationScheme: 'HMAC',
-        username: '',
-        password: '',
-        selfSignedCert: false
-      }
     }
   ]
 });
