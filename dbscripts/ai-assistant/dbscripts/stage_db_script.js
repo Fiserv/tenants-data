@@ -1,5 +1,5 @@
 db.tenants.insertOne({
-  title: 'AIAssistant',
+  title: 'AI Assistant',
   name: 'AIAssistant',
   tenantHost: 'https://tenant-generic.stage-developer-portal.svc',
   tenantPort: '8443',
