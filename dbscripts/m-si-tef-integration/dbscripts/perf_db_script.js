@@ -26,7 +26,7 @@ db.tenants.insertOne({
   active: true,
   betaTag: false,
   internalTag: false,
-  github: 'm-si-tef-integration',
+  github: 'm-sitef-integration',
   selfServiceFeatures: [
     {
       featureName: 'Explore documentation',
